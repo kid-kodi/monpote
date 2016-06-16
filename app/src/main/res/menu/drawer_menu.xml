@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mon_solde"
+            app:actionLayout="@layout/menu_counter"
+            android:icon="@drawable/ic_action_cast"
+            android:title="@string/mon_solde" />
+        <item
+            android:id="@+id/mes_envois"
+            app:actionLayout="@layout/menu_counter"
+            android:icon="@drawable/ic_action_send_now"
+            android:title="@string/mes_envois" />
+        <item
+            android:id="@+id/mes_réçus"
+            app:actionLayout="@layout/menu_counter"
+            android:icon="@drawable/ic_action_reply_all"
+            android:title="@string/mes_réçus" />
+    </group>
+    <item android:title="">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/mes_notifs"
+                    app:actionLayout="@layout/menu_counter"
+                    android:icon="@drawable/ic_action_alarms"
+                    android:title="@string/mes_notifs" />
+                <item
+                    android:id="@+id/help"
+                    android:icon="@drawable/ic_help"
+                    android:title="@string/help" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/mon_compte"
+                    android:icon="@drawable/ic_action_person"
+                    android:title="@string/mon_compte" />
+                <item
+                    android:id="@+id/settings"
+                    android:icon="@drawable/ic_action_settings"
+                    android:title="@string/mes_params" />
+                <item
+                    android:id="@+id/log_out"
+                    android:icon="@drawable/ic_logout"
+                    android:title="@string/action_logout" />
+            </group>
+        </menu>
+    </item>
+</menu>
